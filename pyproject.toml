@@ -1,0 +1,23 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies] # main dependency group
+python = ">=3.9 <3.12" # python 3.12 is not supported by aiortc
+outspeed = {version = "^0.2.12", extras = ["all"]}
+torch = {version = "2.2.0+cpu", source = "pytorch-cpu"}
+torchaudio = {version = "2.2.0+cpu", source = "pytorch-cpu"}
+torchvision = {version = "0.17.0+cpu",source = "pytorch-cpu"}
+silero-vad = "^5.1"
+firebase-admin = "^6.6.0"
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[tool.poetry.scripts]
+outspeed = "outspeed.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

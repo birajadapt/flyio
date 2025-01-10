@@ -138,3 +138,9 @@ Starting machine
 2025-01-09 10:55:31.203	
 Starting machine
 ```
+
+## Deploy command
+
+```
+fly deploy --org sahil-manocha-115
+```
