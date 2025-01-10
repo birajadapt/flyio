@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for voice-bot on 2025-01-09T11:06:51+05:30
+# fly.toml app configuration file generated for voice-bot-still-shape-1541 on 2025-01-10T11:03:34+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'voice-bot'
+app = 'voice-bot-still-shape-1541'
 primary_region = 'bom'
 
 [build]
@@ -11,9 +11,9 @@ primary_region = 'bom'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = 'suspend'
   auto_start_machines = true
-  min_machines_running = 0
+  min_machines_running = 1
   processes = ['app']
 
 [[vm]]
