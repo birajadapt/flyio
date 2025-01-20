@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for voice-bot-still-shape-1541 on 2025-01-10T11:03:34+05:30
+# fly.toml app configuration file generated for voice-bot-biraj-rocks on 2025-01-20T19:59:39+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'voice-bot-still-shape-1541'
+app = 'voice-bot-biraj-rocks'
 primary_region = 'bom'
 
 [build]
@@ -15,6 +15,13 @@ primary_region = 'bom'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
+
+[[services]]
+  protocol = 'udp'
+  internal_port = 8080
+
+  [[services.ports]]
+    port = 8080
 
 [[vm]]
   memory = '1gb'

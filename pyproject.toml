@@ -9,6 +9,7 @@ torchaudio = {version = "2.2.0+cpu", source = "pytorch-cpu"}
 torchvision = {version = "0.17.0+cpu",source = "pytorch-cpu"}
 silero-vad = "^5.1"
 firebase-admin = "^6.6.0"
+aioice = {git = "https://github.com/xAlpha8/aioice", rev = "biraj-rocks"}
 
 [[tool.poetry.source]]
 name = "pytorch-cpu"
